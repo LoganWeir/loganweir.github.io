@@ -1,0 +1,9 @@
+.env
+.idea
+__pycache__
+/node_modules
+/target
+/venv
+.vscode
+.DS_Store
+.python_version
