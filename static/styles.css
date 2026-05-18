@@ -1,3 +1,36 @@
 body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
     text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.birthday-photos {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 0;
+}
+
+.birthday-photos img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.birthday-photos img:nth-child(1) {
+    object-position: center calc(50% + 30px);
+}
+
+.birthday-photos img:nth-child(2) {
+    object-position: center calc(50% - 30px);
+}
+
+.birthday-photos img:nth-child(3) {
+    object-position: center calc(50% + 30px);
 }
