@@ -34,3 +34,8 @@ ul {
 .birthday-photos img:nth-child(3) {
     object-position: center calc(50% + 30px);
 }
+
+.sponsor-line img {
+    height: 1.8em;
+    vertical-align: middle;
+}

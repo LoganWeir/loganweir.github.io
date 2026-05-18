@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - heading "Hey Guess What?" [level=3] [ref=e2]
+  - heading "Cecilia is Turning FIVE!" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - img "Cecilia smiling outside" [ref=e5]
+    - img "Cecilia playing outside" [ref=e6]
+    - img "Cecilia sitting outside" [ref=e7]
+  - text: And that can mean only one thing - a wildly fun (bog-standard) birthday party
+  - list [ref=e8]:
+    - listitem [ref=e9]: Bouncy house? You betchya
+    - listitem [ref=e10]: Juice boxes? The juice must flow
+    - listitem [ref=e11]: Face painting? Glam it up
+  - paragraph [ref=e12]: Expect brief moments of having your kids occupied, wherein you can drink some coffee and talk to other haggard adults.
+  - paragraph [ref=e13]:
+    - text: Pizza, Snacks and Drinks brought to you by
+    - img "Kirkland Signature" [ref=e14]
+  - separator [ref=e15]
+  - heading "Where?" [level=1] [ref=e16]
+  - paragraph [ref=e17]:
+    - link "McKinley Square" [ref=e18] [cursor=pointer]:
+      - /url: https://maps.app.goo.gl/TPtoXt4oigttDV2U6
+    - text: ", kiddy corner to our spot. We'll be at the benches in the back."
+  - paragraph [ref=e19]: There's no bathroom, but if you or your little ones need to go you can run over to our house and use the bathroom there.
+  - heading "WHEN??" [level=1] [ref=e20]
+  - heading "Sun, Jun 14, 2026, 9:30 am" [level=3] [ref=e21]
+  - paragraph [ref=e22]: (9 days after her actual birthday, no one tell her)
+  - heading "How to RSVP:" [level=2] [ref=e23]
+  - paragraph [ref=e24]:
+    - text: Text Bel (
+    - link "646-334-7254" [ref=e25] [cursor=pointer]:
+      - /url: tel:16463347254
+    - text: ) or Logan (
+    - link "415-816-2711" [ref=e26] [cursor=pointer]:
+      - /url: tel:14158162711
+    - text: )
+  - paragraph [ref=e27]:
+    - text: Email Bel (
+    - link "belcortes@gmail.com" [ref=e28] [cursor=pointer]:
+      - /url: mailto:belcortes@gmail.com
+    - text: ) or Logan (
+    - link "loganweir@gmail.com" [ref=e29] [cursor=pointer]:
+      - /url: mailto:loganweir@gmail.com
+    - text: )
+  - paragraph [ref=e30]:
+    - text: No worries if you just show up. If you really need to fill out a form, you can find it
+    - link "here" [ref=e31] [cursor=pointer]:
+      - /url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    - text: .
+  - heading "And please," [level=4] [ref=e32]
+  - heading "FOR THE LOVE OF GOD" [level=1] [ref=e33]
+  - paragraph [ref=e34]: No gifts. If you see our house you will understand.
