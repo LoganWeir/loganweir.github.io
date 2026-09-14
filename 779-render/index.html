@@ -1,115 +1,565 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>779 / Revision 06</title>
-  <link rel="icon" href="data:,">
-  <style>
-    :root { color-scheme: light; --paper: #f3efe5; --ink: #29392f; --muted: #656c60; --line: #c9c9b8; --wood: #873e2b; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
-    header, main, footer { max-width: 1800px; margin: auto; padding-inline: clamp(16px, 3vw, 54px); }
-    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 24px; border-bottom: 1px solid var(--line); }
-    h1, h2, h3 { font-family: Georgia, serif; font-weight: 400; }
-    h1 { margin: 0; font-size: clamp(24px, 3vw, 36px); line-height: 1.2; }
-    h1 span { color: var(--muted); }
-    h2 { margin: 0 0 22px; font-size: clamp(26px, 3vw, 38px); }
-    h3 { margin: 0 0 14px; font-size: 24px; }
-    nav, footer { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 13px; }
-    a { color: inherit; text-underline-offset: 4px; text-decoration-thickness: 1px; }
-    a:hover { color: var(--wood); }
-    a:focus-visible { outline: 2px solid var(--wood); outline-offset: 5px; }
-    section { padding-block: 36px; scroll-margin-top: 20px; }
-    section + section { border-top: 1px solid var(--line); }
-    .gallery, .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 24px; align-items: start; }
-    figure { min-width: 0; margin: 0; }
-    figure a { display: block; }
-    img { display: block; width: 100%; height: auto; background: #ded7c8; }
-    figcaption { margin-top: 9px; font-size: 13px; color: var(--muted); }
-    .wide { grid-column: 1 / -1; }
-    .comparison + .comparison { margin-top: 36px; }
-    footer { border-top: 1px solid var(--line); padding-block: 24px; color: var(--muted); }
-    @media (max-width: 760px) {
-      header { align-items: flex-start; flex-direction: column; gap: 16px; }
-      nav { gap: 12px 20px; }
-      .gallery, .pair { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-      section { padding-block: 28px; }
-    }
-    @media print { figure { break-inside: avoid; } }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>779 <span>/ Revision 06</span></h1>
-    <nav aria-label="Gallery navigation"><a href="#spaces">Spaces</a><a href="#garden">Garden</a><a href="#layout">Layout</a><a href="#lighting">Lighting</a></nav>
-  </header>
-  <main>
-    <section id="spaces" aria-labelledby="spaces-title">
-      <h2 id="spaces-title">Daylight + fixtures / Spaces</h2>
-      <div class="gallery">
-        <figure class="wide"><a href="renders_v06/reverse.png"><img src="renders_v06/reverse.png" alt="Living-room view toward the kitchen and dining area" width="1700" height="1150" fetchpriority="high"></a><figcaption>Looking back from the living room toward the sage kitchen and oak dining nook.</figcaption></figure>
-        <figure><a href="renders_v06/kitchen.png"><img src="renders_v06/kitchen.png" alt="Sage kitchen with oak shelving and brass details" width="1700" height="1150" loading="lazy"></a><figcaption>Sage cabinetry, open oak shelves and a continuous counter frame the kitchen.</figcaption></figure>
-        <figure><a href="renders_v06/living.png"><img src="renders_v06/living.png" alt="Blue chaise sofa, armchair and garden-facing living room" width="1700" height="1150" loading="lazy"></a><figcaption>The blue chaise, armchair and round oak table gather beside the garden.</figcaption></figure>
-        <figure><a href="renders_v06/dining.png"><img src="renders_v06/dining.png" alt="Oak dining table with L-shaped banquette and chairs" width="1700" height="1150" loading="lazy"></a><figcaption>An L-shaped banquette wraps the dining table, with chairs opposite.</figcaption></figure>
-        <figure><a href="renders_v06/peninsula.png"><img src="renders_v06/peninsula.png" alt="Oak-shelved peninsula beside the dishwasher" width="1700" height="1150" loading="lazy"></a><figcaption>The peninsula pairs open oak storage with recessed seating for two.</figcaption></figure>
-        <figure><a href="renders_v06/kitchen_window.png"><img src="renders_v06/kitchen_window.png" alt="Kitchen window beside the sink and open shelves" width="1700" height="1150" loading="lazy"></a><figcaption>The sink-side window looks toward the exterior stair strip.</figcaption></figure>
-        <figure><a href="renders_v06/fridge.png"><img src="renders_v06/fridge.png" alt="Kitchen seen from in front of the refrigerator" width="1700" height="1150" loading="lazy"></a><figcaption>A view into the kitchen from in front of the fridge.</figcaption></figure>
-        <figure class="wide"><a href="renders_v06/cabinet_detail.png"><img src="renders_v06/cabinet_detail.png" alt="Open lower lazy Susan and hinged upper corner cabinet" width="1700" height="1150" loading="lazy"></a><figcaption>Open corner doors reveal the lower lazy Susan and hinged upper cabinet.</figcaption></figure>
-      </div>
-    </section>
-    <section id="garden" aria-labelledby="garden-title">
-      <h2 id="garden-title">Garden</h2>
-      <div class="gallery">
-        <figure class="wide"><a href="renders_v06/garden_wall.png"><img src="renders_v06/garden_wall.png" alt="Centered two-panel garden slider viewed from inside" width="1900" height="1200" loading="lazy"></a><figcaption>The centered 10-foot, two-panel slider opens the living room to the garden.</figcaption></figure>
-        <figure><a href="renders_v06/garden.png"><img src="renders_v06/garden.png" alt="Own garden with brick patio, paths and pale eucalyptus" width="1700" height="1150" loading="lazy"></a><figcaption>The brick patio and garden paths lead toward the white eucalyptus.</figcaption></figure>
-        <figure><a href="renders_v06/garden_overview.png"><img src="renders_v06/garden_overview.png" alt="Porch-height view of the bounded garden" width="1700" height="1150" loading="lazy"></a><figcaption>A porch-height view of the garden, cropped at the white eucalyptus.</figcaption></figure>
-      </div>
-    </section>
-    <section id="layout" aria-labelledby="layout-title">
-      <h2 id="layout-title">Layout / Details</h2>
-      <div class="gallery">
-        <figure><a href="renders_v06/overview.png"><img src="renders_v06/overview.png" alt="Overhead cutaway of the downstairs layout" width="1300" height="2100" loading="lazy"></a><figcaption>The overhead cutaway connects the entry, shared rooms and garden.</figcaption></figure>
-        <figure><a href="renders_v06/entry.png"><img src="renders_v06/entry.png" alt="Two-door coat closet with shelves and hanging storage" width="1400" height="1500" loading="lazy"></a><figcaption>The two-door coat closet keeps shelves and hanging storage beside the entry.</figcaption></figure>
-        <figure><a href="renders_v06/entry_stairs.png"><img src="renders_v06/entry_stairs.png" alt="Entry descent beneath the enclosed upstairs stair return" width="1400" height="1500" loading="lazy"></a><figcaption>The entry descends beneath the enclosed upstairs stair return.</figcaption></figure>
-        <figure><a href="renders_v06/laundry.png"><img src="renders_v06/laundry.png" alt="Laundry aisle with left-side sink and rear stacked appliances" width="1200" height="1500" loading="lazy"></a><figcaption>A left-side sink and shelves lead to stacked laundry beneath the skylight.</figcaption></figure>
-        <figure><a href="renders_v06/entry_plan.png"><img src="renders_v06/entry_plan.png" alt="Overhead detail of the entry, closet, stairs and laundry" width="1400" height="1400" loading="lazy"></a><figcaption>The entry plan shows the closet, separate stair flights and laundry aisle.</figcaption></figure>
-        <figure><a href="renders_v06/hall_detail.png"><img src="renders_v06/hall_detail.png" alt="Two transverse steps connecting the lower and main halls" width="1700" height="1150" loading="lazy"></a><figcaption>Two transverse steps connect the lower hall to the main floor.</figcaption></figure>
-        <figure class="wide"><a href="renders_v06/loft.png"><img src="renders_v06/loft.png" alt="Queen loft above a desk with ladder and garage-facing glazing" width="1700" height="1150" loading="lazy"></a><figcaption>A low queen loft sits above the desk beside the garage-facing glazing.</figcaption></figure>
-      </div>
-    </section>
-    <section id="lighting" aria-labelledby="lighting-title">
-      <h2 id="lighting-title">Bright sun / Matched lighting</h2>
-      <div class="comparison">
-        <h3>Kitchen</h3>
-        <div class="pair">
-          <figure><a href="renders_v06/lighting/kitchen_sun_only.png"><img src="renders_v06/lighting/kitchen_sun_only.png" alt="Kitchen under bright sun and sky with interior lamps off" width="1700" height="1150" loading="lazy"></a><figcaption>Sun only: the kitchen with interior lamps and presentation fills off.</figcaption></figure>
-          <figure><a href="renders_v06/lighting/kitchen_sun_lamps.png"><img src="renders_v06/lighting/kitchen_sun_lamps.png" alt="Matching kitchen view with warm fixtures on" width="1700" height="1150" loading="lazy"></a><figcaption>Sun + lamps: the same sun, sky, camera and exposure, with warm kitchen fixtures.</figcaption></figure>
-        </div>
-      </div>
-      <div class="comparison">
-        <h3>Dining</h3>
-        <div class="pair">
-          <figure><a href="renders_v06/lighting/dining_sun_only.png"><img src="renders_v06/lighting/dining_sun_only.png" alt="Dining area under bright sun and sky with interior lamps off" width="1700" height="1150" loading="lazy"></a><figcaption>Sun only: the dining area with interior lamps and presentation fills off.</figcaption></figure>
-          <figure><a href="renders_v06/lighting/dining_sun_lamps.png"><img src="renders_v06/lighting/dining_sun_lamps.png" alt="Matching dining view with warm fixtures on" width="1700" height="1150" loading="lazy"></a><figcaption>Sun + lamps: the same sun, sky, camera and exposure, with warm dining fixtures.</figcaption></figure>
-        </div>
-      </div>
-      <div class="comparison">
-        <h3>Looking inward</h3>
-        <div class="pair">
-          <figure><a href="renders_v06/lighting/reverse_sun_only.png"><img src="renders_v06/lighting/reverse_sun_only.png" alt="Inward view under bright sun and sky with interior lamps off" width="1700" height="1150" loading="lazy"></a><figcaption>Sun only: looking inward with interior lamps and presentation fills off.</figcaption></figure>
-          <figure><a href="renders_v06/lighting/reverse_sun_lamps.png"><img src="renders_v06/lighting/reverse_sun_lamps.png" alt="Matching inward view with warm fixtures on" width="1700" height="1150" loading="lazy"></a><figcaption>Sun + lamps: the same sun, sky, camera and exposure, with warm interior fixtures.</figcaption></figure>
-        </div>
-      </div>
-      <div class="comparison">
-        <h3>Living</h3>
-        <div class="pair">
-          <figure><a href="renders_v06/lighting/living_sun_only.png"><img src="renders_v06/lighting/living_sun_only.png" alt="Living room under bright sun and sky with interior lamps off" width="1700" height="1150" loading="lazy"></a><figcaption>Sun only: the living room with interior lamps and presentation fills off.</figcaption></figure>
-          <figure><a href="renders_v06/lighting/living_sun_lamps.png"><img src="renders_v06/lighting/living_sun_lamps.png" alt="Matching living-room view with warm fixtures on" width="1700" height="1150" loading="lazy"></a><figcaption>Sun + lamps: the same sun, sky, camera and exposure, with warm living-room fixtures.</figcaption></figure>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer><a href="../">Home</a></footer>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>779 / Revision 06</title>
+        <link rel="icon" href="data:," />
+        <style>
+            :root {
+                color-scheme: light;
+                --paper: #f3efe5;
+                --ink: #29392f;
+                --muted: #656c60;
+                --line: #c9c9b8;
+                --wood: #873e2b;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                background: var(--paper);
+                color: var(--ink);
+                font:
+                    15px/1.5 system-ui,
+                    sans-serif;
+            }
+            header,
+            main,
+            footer {
+                max-width: 1800px;
+                margin: auto;
+                padding-inline: clamp(16px, 3vw, 54px);
+            }
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                padding-block: 24px;
+                border-bottom: 1px solid var(--line);
+            }
+            h1,
+            h2,
+            h3 {
+                font-family: Georgia, serif;
+                font-weight: 400;
+            }
+            h1 {
+                margin: 0;
+                font-size: clamp(24px, 3vw, 36px);
+                line-height: 1.2;
+            }
+            h1 span {
+                color: var(--muted);
+            }
+            h2 {
+                margin: 0 0 22px;
+                font-size: clamp(26px, 3vw, 38px);
+            }
+            h3 {
+                margin: 0 0 14px;
+                font-size: 24px;
+            }
+            nav,
+            footer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px 24px;
+                font-size: 13px;
+            }
+            a {
+                color: inherit;
+                text-underline-offset: 4px;
+                text-decoration-thickness: 1px;
+            }
+            a:hover {
+                color: var(--wood);
+            }
+            a:focus-visible {
+                outline: 2px solid var(--wood);
+                outline-offset: 5px;
+            }
+            section {
+                padding-block: 36px;
+                scroll-margin-top: 20px;
+            }
+            section + section {
+                border-top: 1px solid var(--line);
+            }
+            .gallery,
+            .pair {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 30px 24px;
+                align-items: start;
+            }
+            figure {
+                min-width: 0;
+                margin: 0;
+            }
+            figure a {
+                display: block;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                background: #ded7c8;
+            }
+            figcaption {
+                margin-top: 9px;
+                font-size: 13px;
+                color: var(--muted);
+            }
+            .wide {
+                grid-column: 1 / -1;
+            }
+            .comparison + .comparison {
+                margin-top: 36px;
+            }
+            footer {
+                border-top: 1px solid var(--line);
+                padding-block: 24px;
+                color: var(--muted);
+            }
+            @media (max-width: 760px) {
+                header {
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+                nav {
+                    gap: 12px 20px;
+                }
+                .gallery,
+                .pair {
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 24px;
+                }
+                section {
+                    padding-block: 28px;
+                }
+            }
+            @media print {
+                figure {
+                    break-inside: avoid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>779 <span>/ Revision 06</span></h1>
+            <nav aria-label="Gallery navigation">
+                <a href="#spaces">Spaces</a><a href="#garden">Garden</a
+                ><a href="#layout">Layout</a><a href="#lighting">Lighting</a>
+            </nav>
+        </header>
+        <main>
+            <section id="spaces" aria-labelledby="spaces-title">
+                <h2 id="spaces-title">Daylight + fixtures / Spaces</h2>
+                <div class="gallery">
+                    <figure class="wide">
+                        <a href="renders_v06/reverse.png"
+                            ><img
+                                src="renders_v06/reverse.png"
+                                alt="Living-room view toward the kitchen and dining area"
+                                width="1700"
+                                height="1150"
+                                fetchpriority="high"
+                        /></a>
+                        <figcaption>
+                            Looking back from the living room toward the sage
+                            kitchen and oak dining nook.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/kitchen.png"
+                            ><img
+                                src="renders_v06/kitchen.png"
+                                alt="Sage kitchen with oak shelving and brass details"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            Sage cabinetry, open oak shelves and a continuous
+                            counter frame the kitchen.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/living.png"
+                            ><img
+                                src="renders_v06/living.png"
+                                alt="Blue chaise sofa, armchair and garden-facing living room"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The blue chaise, armchair and round oak table gather
+                            beside the garden.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/dining.png"
+                            ><img
+                                src="renders_v06/dining.png"
+                                alt="Oak dining table with eckbank and chairs"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            An L-shaped banquette wraps the dining table, with
+                            chairs opposite.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/peninsula.png"
+                            ><img
+                                src="renders_v06/peninsula.png"
+                                alt="Oak-shelved peninsula beside the dishwasher"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The peninsula pairs open oak storage with recessed
+                            seating for two.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/kitchen_window.png"
+                            ><img
+                                src="renders_v06/kitchen_window.png"
+                                alt="Kitchen window beside the sink and open shelves"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The sink-side window looks toward the exterior stair
+                            strip.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/fridge.png"
+                            ><img
+                                src="renders_v06/fridge.png"
+                                alt="Kitchen seen from in front of the refrigerator"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            A view into the kitchen from in front of the fridge.
+                        </figcaption>
+                    </figure>
+                    <figure class="wide">
+                        <a href="renders_v06/cabinet_detail.png"
+                            ><img
+                                src="renders_v06/cabinet_detail.png"
+                                alt="Open lower lazy Susan and hinged upper corner cabinet"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            Open corner doors reveal the lower lazy Susan and
+                            hinged upper cabinet.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="garden" aria-labelledby="garden-title">
+                <h2 id="garden-title">Garden</h2>
+                <div class="gallery">
+                    <figure class="wide">
+                        <a href="renders_v06/garden_wall.png"
+                            ><img
+                                src="renders_v06/garden_wall.png"
+                                alt="Centered two-panel garden slider viewed from inside"
+                                width="1900"
+                                height="1200"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The centered 10-foot, two-panel slider opens the
+                            living room to the garden.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/garden.png"
+                            ><img
+                                src="renders_v06/garden.png"
+                                alt="Own garden with brick patio, paths and pale eucalyptus"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The brick patio and garden paths lead toward the
+                            white eucalyptus.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/garden_overview.png"
+                            ><img
+                                src="renders_v06/garden_overview.png"
+                                alt="Porch-height view of the bounded garden"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            A porch-height view of the garden, cropped at the
+                            white eucalyptus.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="layout" aria-labelledby="layout-title">
+                <h2 id="layout-title">Layout / Details</h2>
+                <div class="gallery">
+                    <figure>
+                        <a href="renders_v06/overview.png"
+                            ><img
+                                src="renders_v06/overview.png"
+                                alt="Overhead cutaway of the downstairs layout"
+                                width="1300"
+                                height="2100"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The overhead cutaway connects the entry, shared
+                            rooms and garden.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/entry.png"
+                            ><img
+                                src="renders_v06/entry.png"
+                                alt="Two-door coat closet with shelves and hanging storage"
+                                width="1400"
+                                height="1500"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The two-door coat closet keeps shelves and hanging
+                            storage beside the entry.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/entry_stairs.png"
+                            ><img
+                                src="renders_v06/entry_stairs.png"
+                                alt="Entry descent beneath the enclosed upstairs stair return"
+                                width="1400"
+                                height="1500"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The entry descends beneath the enclosed upstairs
+                            stair return.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/laundry.png"
+                            ><img
+                                src="renders_v06/laundry.png"
+                                alt="Laundry aisle with left-side sink and rear stacked appliances"
+                                width="1200"
+                                height="1500"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            A left-side sink and shelves lead to stacked laundry
+                            beneath the skylight.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/entry_plan.png"
+                            ><img
+                                src="renders_v06/entry_plan.png"
+                                alt="Overhead detail of the entry, closet, stairs and laundry"
+                                width="1400"
+                                height="1400"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            The entry plan shows the closet, separate stair
+                            flights and laundry aisle.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="renders_v06/hall_detail.png"
+                            ><img
+                                src="renders_v06/hall_detail.png"
+                                alt="Two transverse steps connecting the lower and main halls"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            Two transverse steps connect the lower hall to the
+                            main floor.
+                        </figcaption>
+                    </figure>
+                    <figure class="wide">
+                        <a href="renders_v06/loft.png"
+                            ><img
+                                src="renders_v06/loft.png"
+                                alt="Queen loft above a desk with ladder and garage-facing glazing"
+                                width="1700"
+                                height="1150"
+                                loading="lazy"
+                        /></a>
+                        <figcaption>
+                            A low queen loft sits above the desk beside the
+                            garage-facing glazing.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="lighting" aria-labelledby="lighting-title">
+                <h2 id="lighting-title">Bright sun / Matched lighting</h2>
+                <div class="comparison">
+                    <h3>Kitchen</h3>
+                    <div class="pair">
+                        <figure>
+                            <a href="renders_v06/lighting/kitchen_sun_only.png"
+                                ><img
+                                    src="renders_v06/lighting/kitchen_sun_only.png"
+                                    alt="Kitchen under bright sun and sky with interior lamps off"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun only: the kitchen with interior lamps and
+                                presentation fills off.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <a href="renders_v06/lighting/kitchen_sun_lamps.png"
+                                ><img
+                                    src="renders_v06/lighting/kitchen_sun_lamps.png"
+                                    alt="Matching kitchen view with warm fixtures on"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun + lamps: the same sun, sky, camera and
+                                exposure, with warm kitchen fixtures.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="comparison">
+                    <h3>Dining</h3>
+                    <div class="pair">
+                        <figure>
+                            <a href="renders_v06/lighting/dining_sun_only.png"
+                                ><img
+                                    src="renders_v06/lighting/dining_sun_only.png"
+                                    alt="Dining area under bright sun and sky with interior lamps off"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun only: the dining area with interior lamps
+                                and presentation fills off.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <a href="renders_v06/lighting/dining_sun_lamps.png"
+                                ><img
+                                    src="renders_v06/lighting/dining_sun_lamps.png"
+                                    alt="Matching dining view with warm fixtures on"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun + lamps: the same sun, sky, camera and
+                                exposure, with warm dining fixtures.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="comparison">
+                    <h3>Looking inward</h3>
+                    <div class="pair">
+                        <figure>
+                            <a href="renders_v06/lighting/reverse_sun_only.png"
+                                ><img
+                                    src="renders_v06/lighting/reverse_sun_only.png"
+                                    alt="Inward view under bright sun and sky with interior lamps off"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun only: looking inward with interior lamps and
+                                presentation fills off.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <a href="renders_v06/lighting/reverse_sun_lamps.png"
+                                ><img
+                                    src="renders_v06/lighting/reverse_sun_lamps.png"
+                                    alt="Matching inward view with warm fixtures on"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun + lamps: the same sun, sky, camera and
+                                exposure, with warm interior fixtures.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="comparison">
+                    <h3>Living</h3>
+                    <div class="pair">
+                        <figure>
+                            <a href="renders_v06/lighting/living_sun_only.png"
+                                ><img
+                                    src="renders_v06/lighting/living_sun_only.png"
+                                    alt="Living room under bright sun and sky with interior lamps off"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun only: the living room with interior lamps
+                                and presentation fills off.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <a href="renders_v06/lighting/living_sun_lamps.png"
+                                ><img
+                                    src="renders_v06/lighting/living_sun_lamps.png"
+                                    alt="Matching living-room view with warm fixtures on"
+                                    width="1700"
+                                    height="1150"
+                                    loading="lazy"
+                            /></a>
+                            <figcaption>
+                                Sun + lamps: the same sun, sky, camera and
+                                exposure, with warm living-room fixtures.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer><a href="../">Home</a></footer>
+    </body>
 </html>
